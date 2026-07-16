@@ -57,7 +57,27 @@ plt.show()
 
 
 
+df["Date"] = pd.to_datetime(df["Date"])
 
+df["Month"] = df["Date"].dt.strftime("%b")
+
+monthly = df.groupby("Month")["Amount"].sum()
+
+months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+
+monthly = monthly.reindex(months)
+
+plt.figure(figsize=(10,5))
+
+plt.plot(monthly.index, monthly.values, marker="o")
+
+plt.title("Monthly Revenue")
+plt.xlabel("Month")
+plt.ylabel("Revenue (NGN)")
+
+plt.grid(True)
+
+plt.show()
 
 
 

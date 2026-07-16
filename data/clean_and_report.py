@@ -51,11 +51,11 @@ print(data["Service"].value_counts())
 print("\nOrders per Order ID (should mostly be 1 after deduping):")
 print(data["Order ID"].value_counts().to_string())
 
-print("Number of Pending Clients:")
+
 pending =(data["Status"] == "Pending").sum()
+print(f"Number of Pending Clients:{pending}")
 
 
-print("Number of Cancelled Orders:")
 Cancelled=(data["Status"] == "Cancelled").sum()
 print(f"Number of Cancelled Orders:{Cancelled}")
 

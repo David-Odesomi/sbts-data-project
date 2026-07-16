@@ -1,0 +1,11 @@
+TOTAL CUSTOMERS: 147
+TOTAL REVENUE: NGN19613809.0
+THE TOP SERVICE BOUGHT: IT Support Retainer
+THE REP WITH THE MOST CUSTOMERS: Ibrahim Sule
+
+Status
+Cancelled    3956627.0
+Overdue      5522962.0
+Paid         6369656.0
+Pending      3764564.0
+Name: Amount, dtype: float64

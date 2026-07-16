@@ -1,0 +1,44 @@
+--------------------
+SUMMARY REPORT
+------------------
+Total number of orders made: 147
+----------------------------------------
+Total revenue: NGN19,613,809
+----------------------------------------
+The top service bought: IT Support Retainer
+----------------------------------------
+The rep with the most customers: Ibrahim Sule
+----------------------------------------
+The minimum amount:NGN43,029
+----------------------------------------
+The maximum amount:NGN304,458
+----------------------------------------
+The average amount: NGN138,125
+----------------------------------------
+No of pending orders: 35
+----------------------------------------
+No of cancelled orders: 28
+----------------------------------------
+No of paid orders: 46
+----------------------------------------
+
+Total revenue per status
+----------------------------------------
+Status
+Cancelled    3956627.0
+Overdue      5522962.0
+Paid         6369656.0
+Pending      3764564.0
+Name: Amount, dtype: float64
+----------------------------------------
+
+No of Orders per Service
+----------------------------------------
+Service
+IT Support Retainer    31
+Network Setup          30
+Consulting             24
+Backup Service         23
+Cloud Hosting          22
+Server Maintenance     17
+Name: count, dtype: int64

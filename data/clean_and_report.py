@@ -51,6 +51,17 @@ print(data["Service"].value_counts())
 print("\nOrders per Order ID (should mostly be 1 after deduping):")
 print(data["Order ID"].value_counts().to_string())
 
+print("Number of Pending Clients:")
+pending =(data["Status"] == "Pending").sum()
+
+
+print("Number of Cancelled Orders:")
+Cancelled=(data["Status"] == "Cancelled").sum()
+print(f"Number of Cancelled Orders:{Cancelled}")
+
+Paid = (data["Status"] == "Paid").sum()
+print(f"Number of Paid Orders:{Paid}")
+
 print(f"\nMax transaction: NGN {data['Amount'].max():,.0f}")
 print(f"Min transaction: NGN {data['Amount'].min():,.0f}")
 print(f"Average transaction: NGN {data['Amount'].mean():,.0f}")

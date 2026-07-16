@@ -80,6 +80,21 @@ plt.grid(True)
 plt.show()
 
 
+sales = df.groupby("Sales Rep")["Amount"].sum()
+
+plt.figure(figsize=(9,5))
+
+plt.bar(sales.index, sales.values)
+
+plt.title("Revenue by Sales Representative")
+plt.xlabel("Sales Representative")
+plt.ylabel("Revenue (NGN)")
+
+plt.xticks(rotation=45)
+
+plt.tight_layout()
+
+plt.show()
 
 
 

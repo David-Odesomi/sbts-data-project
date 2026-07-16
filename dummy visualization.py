@@ -40,6 +40,20 @@ plt.tight_layout()
 plt.show()
 
 
+status = df["Status"].str.strip().value_counts()
+
+plt.figure(figsize=(7,7))
+
+plt.pie(
+    status.values,
+    labels=status.index,
+    autopct="%1.1f%%",
+    startangle=90
+)
+
+plt.title("Order Status Distribution")
+
+plt.show()
 
 
 

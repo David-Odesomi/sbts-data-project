@@ -25,7 +25,19 @@ plt.show()
 
 
 
+orders = df["Sales Rep"].value_counts()
 
+plt.figure(figsize=(8,5))
+plt.bar(orders.index, orders.values)
+
+plt.title("Orders per Sales Representative")
+plt.xlabel("Sales Representative")
+plt.ylabel("Number of Orders")
+
+plt.xticks(rotation=45)
+
+plt.tight_layout()
+plt.show()
 
 
 
